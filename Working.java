@@ -3,13 +3,7 @@ public class Working {
 	private double balance;
 	private double withdraw;
 	private double deposite;
-	
-	//constructor
-	Working()
-	{
-		
-	}
-
+	//getter and setter
 	public double getBalance() {
 		return balance;
 	}
@@ -34,7 +28,7 @@ public class Working {
 		this.deposite = deposite;
 	}
 	
-	//getter and setter
+	
 	
 
 }
