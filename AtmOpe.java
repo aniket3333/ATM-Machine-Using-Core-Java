@@ -3,11 +3,11 @@ import java.util.Map;
 public class AtmOpe implements AtmOperations{
 	Working atm=new Working();
 	Map<Double,String> ministmt=new HashMap<>();
-	//@Override
+	@Override
 	public void viewBalance() {
 		System.out.println("Available Balance is : "+atm.getBalance());
 	}
-	//@Override
+	@Override
 	public void withdraw(double withdrawAmount)
 	{
 		if(withdrawAmount%500==0)
@@ -30,7 +30,7 @@ public class AtmOpe implements AtmOperations{
 			System.out.println("Please Withdraw  amount in multiple of 500 : ");
 		}
 	}
-	//@Override
+	@Override
 	public void deposite(double depositeAmount) {
 		ministmt.put(depositeAmount,"Amount Deposited");
 		System.out.println(depositeAmount+"Deposited Succesfully !!");
@@ -43,11 +43,5 @@ public class AtmOpe implements AtmOperations{
 			System.out.println(m.getKey()+""+m.getKey());
 		}
 	}
-	@Override
-	public void viewbalance() {
-		// TODO Auto-generated method stub
-		
-	}
 	
- 
 }
